@@ -64,7 +64,7 @@ public class Controller extends MonitorPlugin implements NeuralNetListener{
     	System.out.println("Training finished");
     	// store the training values.
     	try {
-			PrintWriter w = new PrintWriter("errors_" + errors[20]+".txt", "UTF-8");
+			PrintWriter w = new PrintWriter("./log/errors_" + errors[20]+".log", "UTF-8");
 			for(int i = 0; i < count; i++)
 	    	{
 				w.write(errors[i]+";");
