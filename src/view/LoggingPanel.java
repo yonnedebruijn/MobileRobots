@@ -125,7 +125,7 @@ public class LoggingPanel extends JPanel {
         }
 
         write("Simulation Time: " + running_time + " sec");
-        String name = p.log_dir + now() + "-log.txt";
+        String name = p.log_dir + now() + "-log.log";
         try {
             PrintWriter out = new PrintWriter(name);
             out.print(debug.getText());
@@ -155,7 +155,7 @@ public class LoggingPanel extends JPanel {
             write_error("No Files Created: Debugging Disabled");
             return;
         }
-        String name = p.debug_dir + now() + "-debug.txt";
+        String name = p.debug_dir + now() + "-debug.log";
         try {
             PrintWriter out = new PrintWriter(name);
             out.print(debug.getText());
